@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1{
+            color: aqua;
+        }
+        /* The specificity of this selector is 1 + 10 = 11 */
+        h1.yellow{
+            color: yellow;
+        }
+        /* The specificity of this selector is 10 */
+        .cred{
+            color: red;
+        }
+        /* The specificity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* The specificity of this selector is 10 */
+        .aqua{
+            color: aqua;
+        }
+        /* The specificity of this selector is 10 */
+        .cbrown{
+            color: brown;
+        }
+        /* The specificity of this selector is 10 */
+        .cblack{
+            color: black;
+        }
+        /* The specificity of this selector is 10 */
+        .purple{
+        color: purple;
+       }
+       /* The specificity of this selector is 10 */
+       [data-x=a]{
+        color: pink;
+        background-color: black;
+       }
+       /* The specificity of this !important is more than inline style - 10000 points */
+       p{
+        color: black !important;
+       }
+       /* The specificity of this selector is 1 + 10 + 10 + 10 + 10(pseudo class) += 41 */
+       a.sahitoclass.pirih-class[href]:hover {
+        color: blueviolet;
+       }
+       
+    </style>
+</head>
+<body>
+    <!-- Order of specificity is : Inline Style> Class or Attribute Selector> ID Selector> Element Selector> Universal Selector> -->
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+    <div>
+        <h2 style="color: blue;" class="aqua cbrown cblack">CSS Specificity</h2>
+    </div>
+    <div>
+        <!-- Attribute Selector -->
+        <h3 class="purple" data-x="a">CSS Specificity</h3>
+    </div>
+    <div>
+        <p style="color: brown;">CSS Specificity</p>
+    </div>
+</body>
+</html>

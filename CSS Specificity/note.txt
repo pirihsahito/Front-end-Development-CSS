@@ -1,0 +1,23 @@
+Specificity :
+
+When you style a webpage, sometimes multiple CSS rules target the same element. So, which one wins? 🤔 That’s where CSS specificity comes in.
+
+The Cascade Algorithm :
+
+CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. The cascade algorithm has 4 distinct stages.
+1. Position and order of appearance: the order in which your CSS rules appear
+2. Specificity: an algorithm that determines which CSS selector has the strongest match (inline > ID > class > element > universal)
+3. Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+4. Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+
+Specificity Calculation :
+
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+
+Then, add up the values of all the parts in the selector.
