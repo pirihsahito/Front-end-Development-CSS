@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* html is root element */
+        html{
+            font-size: 12px;
+        }
+        .box{
+            border: 2px solid black;
+            width: 2048px;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+        .vw{
+            border: 2px solid black;
+            width: 100vw;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+        .auto{
+            border: 2px solid black;
+            width: 80vw;
+            margin: auto;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 27px auto;
+            background-color: aqua;
+        }
+        .containertwo{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 27px auto;
+            font-size: 18px;
+            background-color: aqua;
+        }
+        .containertwo p{
+            font-size: 2em;
+            border: 3px solid red;
+            width: 75%;
+        }
+        .containerthree{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 27px auto;
+            background-color: aqua;
+        }
+        .containerthree p{
+            font-size: 2rem;
+        }
+        .containerfour{
+            margin: 27px auto;
+            box-sizing: border-box;
+            border: 2px solid black;
+            color: blue;
+            font-size: 22px;
+            /* vmin and vmax are sizing units */
+            width: 100vmin;
+            min-height: 80vh;
+        }
+        .containerfive{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 27px auto;
+            background-color: aqua;
+        }
+        .containerfive> div{
+            font-size: 2em;
+            border: 3px solid red;
+            width: 75%;
+        }
+        .containerfive> div> div{
+            font-size: 2em;
+            border: 3px solid blue;
+            width: 75%;
+        }
+        .reference{
+            font-size: 20px;
+            margin: 27px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is box
+    </div>
+    <div class="vw">
+        This is another box
+    </div>
+    <div class="auto">
+        This is also another box
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius laboriosam dolor quis officia autem doloribus culpa corrupti accusantium odit voluptatibus ratione delectus sequi commodi tempore repellendus fugiat sunt hic molestiae maxime assumenda, rerum nesciunt animi. Laudantium optio repellat, nulla ab, nostrum rem veritatis sapiente natus voluptas provident aperiam ex! Veritatis nam nesciunt delectus magnam repudiandae.
+    </div>
+    <div class="containertwo">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius laboriosam dolor quis officia autem doloribus culpa corrupti accusantium odit voluptatibus ratione delectus sequi commodi tempore repellendus fugiat sunt hic molestiae maxime assumenda, rerum nesciunt animi. Laudantium optio repellat, nulla ab, nostrum rem veritatis sapiente natus voluptas provident aperiam ex! Veritatis nam nesciunt delectus magnam repudiandae.
+        </p>
+    </div>
+    <div class="containerthree">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius laboriosam dolor quis officia autem doloribus culpa corrupti accusantium odit voluptatibus ratione delectus sequi commodi tempore repellendus fugiat sunt hic molestiae maxime assumenda, rerum nesciunt animi. Laudantium optio repellat, nulla ab, nostrum rem veritatis sapiente natus voluptas provident aperiam ex! Veritatis nam nesciunt delectus magnam repudiandae.
+        </p>
+    </div>
+    <div class="containerfour">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius laboriosam dolor quis officia autem doloribus culpa corrupti accusantium odit voluptatibus ratione delectus sequi commodi tempore repellendus fugiat sunt hic molestiae maxime assumenda, rerum nesciunt animi. Laudantium optio repellat, nulla ab, nostrum rem veritatis sapiente natus voluptas provident aperiam ex! Veritatis nam nesciunt delectus magnam repudiandae.
+        </p>
+    </div>
+    <div class="containerfive">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit maiores magnam provident, at earum cum quos eveniet perferendis. Numquam quisquam nesciunt voluptatem?
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptates, cupiditate cumque doloremque laboriosam quibusdam vel animi aliquid rem, possimus accusamus ad quisquam.
+            </div>
+        </div>
+    </div>
+    <div class="reference">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units">CSS mdn docs reference for units</a>
+    </div>
+</body>
+</html>
