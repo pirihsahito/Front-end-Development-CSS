@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid purple;
+            padding: 45px;
+            margin: 45px;
+        }
+
+        .inlinebox {
+            border: 2px solid black;
+            display: inline;
+            padding: 45px;
+            margin: 45px;
+        }
+
+        .inlineblock {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 45px;
+            margin: 45px;
+        }
+
+        .none {
+            border: 2px solid black;
+            padding: 45px;
+            margin: 45px;
+            display: none;
+        }
+
+        .visibility {
+            border: 2px solid black;
+            padding: 45px;
+            margin: 45px;
+            /* In this property there will be empty space */
+            visibility: hidden;
+        }
+
+        .flex {
+            border: 2px solid black;
+            padding: 45px;
+            margin: 45px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .lorem {
+            border: 2px solid purple;
+            display: inline-block;
+            padding: 45px;
+            margin: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a div box and I am a block element
+    </div>
+    <div class="inlinebox">
+        I am also a div but I am changed to inline element through CSS
+    </div>
+    <div class="inlineblock">
+        I am also a div but I am changed to inline block through CSS
+    </div>
+    <span>I am a good</span>
+    <span>Girl</span>
+    <div class="visibility">
+        I am also a div but I am changed to hidden visibility property through CSS
+    </div>
+    <div class="none">
+        I am also a div but I am changed to none property through CSS
+    </div>
+    <div class="flex">
+        I am also a div but I shows my conntent at centre through CSS flex display property
+    </div>
+    <div>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display">Learn more about CSS
+            Display Properties</a>
+    </div>
+    <div class="lorem">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum perferendis nemo perspiciatis nihil deleniti.
+        Est reprehenderit sed accusamus dolores vitae ad enim pariatur soluta alias nihil, neque consequatur
+        accusantium, odit aut quod qui voluptatibus numquam at nisi omnis vero similique rem maxime. A, adipisci nisi?
+    </div>
+</body>
+
+</html>
