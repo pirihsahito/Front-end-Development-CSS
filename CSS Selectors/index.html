@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: purple;
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* ID  Selector */
+        #yellow{
+            background-color: yellow;
+        }
+        /* Child Selector*/
+        div > p{
+            background-color: aquamarine;
+        }
+        /* Descendant Selector */
+        span p{
+            background-color: pink;
+        }
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+           a:link{
+            color: green;
+           }
+           a:visited{
+            color: yellow;
+           }
+           a:active{
+            background-color: red;
+           }
+           a:hover{
+            background-color: lightseagreen;
+           }
+           p:first-child{
+            background-color: brown;
+           }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div>
+        I am a div
+        <p>
+            I am  para inside div (Child para of div)...
+        </p>
+        <article>
+            <p>
+                But I am not a child para of div
+            </p>
+        </article>
+    </div>
+    <div class="red">
+        But I am red div
+
+    </div>
+    <div id="yellow">
+        But I am yellow div
+    </div>
+    <span>
+        <p>I am  fiirst child of span</p>
+        <p>I am second child of span</p>
+        <article>
+            
+            <p>
+                But I am descendant para of span
+            </p>
+        </article>
+    </span>
+    <a href="https://github.com/pirihsahito">My Github Profile</a>
+    
+</body>
+</html>
